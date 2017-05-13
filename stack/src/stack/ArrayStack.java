@@ -2,8 +2,16 @@ package stack;
 
 public class ArrayStack<E> implements Stack<E> {
 
-	private E[] array = (E[])new Object[20];
+	private E[] array;// = (E[])new Object[20];
 	private int position;
+	
+	public ArrayStack(){
+		this.array = (E[])new Object[20];
+	}
+	
+	public ArrayStack(int tam) {
+		this.array = (E[])new Object[tam];
+	}
 	
 	//Insere o elemento
 	@Override

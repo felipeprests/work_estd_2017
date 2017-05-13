@@ -27,7 +27,7 @@ public class ArrayStackTest {
 	@Test
 	public void topTest(){
 		
-		Stack<Integer> stack = new ArrayStack<>();
+		Stack<Integer> stack = new ArrayStack<>(4);
 		
 		Assert.assertNull(stack.top());
 		
@@ -39,7 +39,7 @@ public class ArrayStackTest {
 		Assert.assertEquals(Integer.valueOf(3), stack.top());
 		Assert.assertEquals(3, stack.getSize());
 		
-
+		//Assert.assertEquals(4, stack.);
 	}
 	
 	
