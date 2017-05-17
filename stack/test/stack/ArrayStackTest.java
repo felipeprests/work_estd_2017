@@ -42,7 +42,19 @@ public class ArrayStackTest {
 		//Assert.assertEquals(4, stack.);
 	}
 	
+	@Test
+	public void resizeTest(){		
+		
+		Stack<String> stack = new ArrayStack<>(2);
 	
+		stack.push("A");
+		stack.push("B");
+		stack.push("C");
+
+		
+		Assert.assertFalse(stack.isEmpty());
+		Assert.assertEquals(3, stack.getSize());
+	}
 
 	
 }
